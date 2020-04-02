@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "DS2438_HIH9121", "DS2438_HIH9121.cproj", "{91468D4F-8AE2-4C59-8A35-549C49E00934}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91468D4F-8AE2-4C59-8A35-549C49E00934}.Debug|AVR.ActiveCfg = Debug|AVR
+		{91468D4F-8AE2-4C59-8A35-549C49E00934}.Debug|AVR.Build.0 = Debug|AVR
+		{91468D4F-8AE2-4C59-8A35-549C49E00934}.Release|AVR.ActiveCfg = Release|AVR
+		{91468D4F-8AE2-4C59-8A35-549C49E00934}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
