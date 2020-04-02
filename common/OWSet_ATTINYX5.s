@@ -140,7 +140,7 @@
 	ldi r_temp,0
 	out _SFR_IO_ADDR(TIMSK),r_temp ;; is default
 	;Enable Pin int
-	ldi r_temp,(1<<INT0)
+	ldi r_temp,(1<<INT0) | (1<<PCIE)
 	out _SFR_IO_ADDR(GIMSK),r_temp
 	;Set Timerclock to Clock / 8 (2us)
 	ldi r_temp,(1<<CS01)
