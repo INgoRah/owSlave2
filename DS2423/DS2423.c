@@ -127,6 +127,9 @@ int main(void){
 
 	PORTB|=0xFF-(1<<PINB2); //Make PullUp an all Pins but not OW_PIN
 	PORTA|=0xFF; 
+	DDRB |= _BV(PB0) | _BV(PB1);
+	PORTB &= ~(_BV(PB0) | _BV(PB1));
+
 	if (PINB&(1<<PINB0)) { 
 	} else {//SW set, PINB0 =0 no pullup, clear PORT of ios
 		PORTA&=~((1<<PINA4)|(1<<PINA5));

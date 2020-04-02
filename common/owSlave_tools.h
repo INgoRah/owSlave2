@@ -31,7 +31,7 @@
 #define OWST_WDT_ISR
 
 #define OWST_INIT_USI_ON
-#endif
+#endif /* __AVR_ATtiny85__ */
 
 #if  defined(__AVR_ATtiny44__)  || defined(__AVR_ATtiny84__) || defined(__AVR_ATtiny24A__)||defined(__AVR_ATtiny44A__)  || defined(__AVR_ATtiny84A__)
 #define OWST_INIT_ALL_OFF \
@@ -117,7 +117,7 @@ ISR(WATCHDOG_vect) {/*	#else ISR(WDT_vect) {		#endif*/\
 	}\
 	asm("SLEEP");
 
-#endif
+#endif /* __AVR_ATtinyx4__ */
 
 #if  defined(__AVR_ATmega88PA__)||defined(__AVR_ATmega88__)||defined(__AVR_ATmega88P__)||defined(__AVR_ATmega168__)||defined(__AVR_ATmega168A__) ||defined(__AVR_ATmega328__) ||defined(__AVR_ATmega328P__) ||defined(__AVR_ATmega328PB__)
 #define OWST_INIT_ALL_OFF \
@@ -145,7 +145,7 @@ PORTA|=0xFF;
 	}\
 	asm("SLEEP");
 
-#endif
+#endif /* __AVR_ATmegax8x__ */
 
 //********************** AD_WANDLER ********************************
 //******************************************************************
